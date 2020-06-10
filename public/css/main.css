@@ -1,6 +1,6 @@
 :root {
-    --title-color: #322153;
-    --primary-color: #34CB79;
+    --title-color: #251911;
+    --primary-color: #0D415D;
 }
 
 *{
@@ -18,7 +18,7 @@ html{
 */
 
 body{
-    background: rgb(203, 203, 240);
+    background: rgba(228, 214, 188, 0.5);
     --webkit-font-smoothing: antialiased;
 }
 
