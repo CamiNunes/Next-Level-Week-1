@@ -15,7 +15,11 @@
         {% include "partials/page-header.html" %}
         <main>
             {% if total > 0 %}
-                <h4><strong>{{total}} pontos</strong> encontrados</h4>
+                {% if total > 1 %}
+                    <h4><strong>{{total}} pontos</strong> encontrados</h4>
+                {%else%}
+                    <h4><strong>{{total}} ponto</strong> encontrado</h4>
+                {% endif %}    
                 <div class="cards">
                 {% for place in places %}
                     <div class="card">
@@ -31,7 +35,7 @@
                 {% endfor %}        
                 </div>
             {% else %}    
-                <h4><strong>Nenhum</strong> local encontrado</h4>
+                <h4><strong>Nenhum</strong> local encontrados</h4>
             {% endif %}
         </main>
     </div>
