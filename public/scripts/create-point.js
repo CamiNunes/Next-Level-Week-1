@@ -4,7 +4,7 @@ function populateUFs(){
     .then( res => res.json()) //arrow function que retorna um valor
     .then( states => {
         for(const state of states){
-            ufSelect.innerHTML += `<option value="${state.id}">${state.sigla} - ${state.nome}</option>`
+            ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
         }
     })
 }
